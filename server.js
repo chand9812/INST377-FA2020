@@ -13,9 +13,11 @@ app.use(express.static('public'));
 app.route('/api')
   .get((req, res) => {
     console.log('GET request detected');
+    res.status(200).send('Hello World');
   })
   .post((req, res) => {
     console.log('POST request detected');
+    console.log('Form data in req.body', req.body);
   });
 
 app.listen(port, () => {
