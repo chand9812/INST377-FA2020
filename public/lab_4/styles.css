@@ -1,7 +1,7 @@
 
 body {
     font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
-    background: #3AAFAB;
+    background: #CD3782;
     color: #fff;
     padding: 50px 0;
   }
@@ -13,6 +13,12 @@ body {
     margin: 0 auto;
   }
   
+  .header{
+    display: flex;
+    justify-content: center;
+    
+  }
+
   .container * {
     box-sizing: border-box;
   }
