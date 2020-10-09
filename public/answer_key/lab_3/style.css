@@ -14,13 +14,13 @@ body {
   width: 70%;
   min-width: 800px;
   margin: 0 auto;
-  background-color: #1653BC;
+  background-color: #6091C3;
 }
 
 /* || typography */
 
 h1, h2, h3 {
-  font-family: 'Grenze Gotisch', cursive;
+  font-family: 'Cinzel Decorative', cursive;
   color: #2a2a2a;
 }
 
