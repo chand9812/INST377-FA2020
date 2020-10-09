@@ -63,7 +63,28 @@
             fetch('/api')
             .then((response) => response.text())
             .then((response) => {
-                 console.log(response);
+                 console.log("Sagar Chand");
+                 const fruits_label = ['apple', 'orange', 'strawberry'];
+                 const elements_label = document.querySelectorAll('.flex-inner li label');
+                 elements_label.forEach((el, i) => {
+                     el.innerText = fruits_label[i];
+
+                 })
+
+                 const head_val = document.querySelector('.header');
+                 head_val.textContent('Sagar Chand Lab 5');
+
+                 const back_color = document.querySelector('.body');
+                 document.body.style.backgroundColor = rbg(169,219,42);
+
+                 const form_center = document.querySelector('.flex-outer');
+                 form.style.margin= '0 auto';
+                 
+                 const label_change = document.querySelector('.checkbox-list-label');
+                 label_change.textContent = "Fruits";
+                 
+
+                
             })
        }
         </script>
