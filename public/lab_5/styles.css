@@ -76,6 +76,7 @@ body {
   .flex-outer li textarea {
     padding: 15px;
     border: none;
+    
   }
   
   .flex-outer li button {
@@ -87,8 +88,14 @@ body {
     text-transform: uppercase;
     letter-spacing: .09em;
     border-radius: 3px;
+    margin-right: 10px;
   }
   
   .flex-inner li {
-    width: 80px;
+    width: 95px;
+  }
+
+  .flex-outer, .checkbox-list-label {
+    max-width:800px;
+    padding: 0 16px;
   }
