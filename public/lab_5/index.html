@@ -35,7 +35,7 @@
                         <textarea rows="6" cols="33" id="message" name="message" placeholder="Enter your message here"></textarea>
                     </li>
                     <li>
-                        <p>Age</p>
+                        <p class='checkbox-list-label'>Age</p>
                         <ul class="flex-inner">
                             <li>
                                 <input type="checkbox" id="eighteen-to-thirtyfive" name="eighteen-to-thirtyfive">
@@ -71,18 +71,18 @@
 
                  })
 
-                 const head_val = document.querySelector('.header');
-                 head_val.textContent('Sagar Chand Lab 5');
+                 const head_val = document.querySelector('h1');
+                 head_val.textContent = "Lab 5 for Sagar Chand";
 
                  const back_color = document.querySelector('.body');
-                 document.body.style.backgroundColor = rbg(169,219,42);
+                 document.body.style.backgroundColor = "green";
 
                  const form_center = document.querySelector('.flex-outer');
-                 form.style.margin= '0 auto';
+                 form_center.style.margin= '0 auto';
                  
                  const label_change = document.querySelector('.checkbox-list-label');
-                 label_change.textContent = "Fruits";
-                 
+                 label_change.textContent = 'Fruits';
+
 
                 
             })
