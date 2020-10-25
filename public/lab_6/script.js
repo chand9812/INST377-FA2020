@@ -44,7 +44,8 @@ document.body.addEventListener('submit', async (e) => {
         const num = getRandomIntInclusive(0, 243);
         return fromServer[num];
       })
-      console.log('countarrrandom', countarrrandom)
+      const reversearray = countarrrandom.sort((a, b) => sortByKey(a, b, 'name'));
+      
 
       console.log('fromServer', fromServer);
     })
