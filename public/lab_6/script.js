@@ -42,9 +42,9 @@ document.body.addEventListener('submit', async (e) => {
       const countryarr = range(10);
       const countarrrandom = countryarr.map(() => {
         const num = getRandomIntInclusive(0, 243);
-        return num;
+        return fromServer[num];
       })
-
+      console.log('countarrrandom', countarrrandom)
 
       console.log('fromServer', fromServer);
     })
