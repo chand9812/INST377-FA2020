@@ -46,6 +46,8 @@ document.body.addEventListener('submit', async (e) => {
       })
       const reversearray = countarrrandom.sort((a, b) => sortByKey(a, b, 'name'));
       
+      const ul = document.createElement('ul');
+      ul.className = 'flex-inner';
 
       console.log('fromServer', fromServer);
     })
