@@ -1,17 +1,17 @@
 function convertRestaurantsToCategories(restaurantList) {
   const catarr = [];
-  const ans = {};
+  const result = {};
   for(let i = 0; i < restaurantList.length; i += 1){
     catarr.push(restaurantList[i].category);
   }
   for(let i = 0; i < catarr.length; i += 1){
-    if(!ans[catarr[i]]){
-      ans[catarr[i]] = 0;
+    if(!result[catarr[i]]){
+      result[catarr[i]] = 0;
     }
-    ans[catarr[i]] += 1;
+    result[catarr[i]] += 1;
   }
   const list = Object.keys(result).map((category) => ({
-    y: ans[category],
+    y: result[category],
     label: category
   }));
   return list;
@@ -36,7 +36,7 @@ function makeYourOptionsObject(datapointsFromRestaurantsList) {
     animationEnabled: true,
     colorSet: 'customColorSet1',
     title: {
-      text: 'Places to eat out in future'
+      text: 'Places To Eat Out In Future'
     },
     axisX: {
       interval: 1,
