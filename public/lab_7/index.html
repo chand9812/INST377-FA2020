@@ -13,6 +13,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
     <title>Sagar Chand's Lab 7</title>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -22,12 +23,24 @@
 </head>
 <body>
     <div id= 'chartContainer'></div>
-    <script src='script.js'></script>
+    
     <div class = "wrapper">
-        <div class = "container">
-
+        <div class = "container flex-outer">
+            <div class = 'header'>
+                <h1>Sagar Chand's Lab 7</h1>
+            </div>
+            <div id= 'chartContainer'></div>
+            <form>
+                <button
+                  type="submit"
+                  class="submitButton"
+                  name="submitButton"
+                >Where should we eat</button>
+              </form>
         </div>
     </div>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src='script.js'></script>
 </body>
 </html>
 
