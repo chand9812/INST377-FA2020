@@ -1,5 +1,20 @@
 function convertRestaurantsToCategories(restaurantList) {
   // process your restaurants here!
+  const catarr = [];
+  const ans = {};
+  for(let i = 0; i < restaurantList.length; i += 1){
+    catarr.push(restaurantList[i].category);
+  }
+  for(let i = 0; i < catarr.length; i += 1){
+    if(!ans[catarr[i]]){
+      ans[catarr[i]] = 0;
+    }
+    ans[catarr[i]] += 1;
+  }
+  const list = Object.keys(result).map((category) => ({
+    y: ans[category],
+    label: category
+  }));
   return list;
 }
 
